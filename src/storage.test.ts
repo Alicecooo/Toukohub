@@ -1,0 +1,4 @@
+import { describe, expect, it, beforeEach } from 'vitest';
+import { clearSave, loadSave, saveGame } from './storage';
+const story = { version: '1', startNode: 'a', characters: {}, nodes: [{ id: 'a', text: 'start' }, { id: 'b', text: 'saved' }] };
+describe('save storage', () => { beforeEach(() => localStorage.clear()); it('round trips versioned saves', () => { saveGame({ storyVersion: '1', nodeId: 'b', flags: { trust: 1 } }); expect(loadSave(story)).toEqual({ storyVersion: '1', nodeId: 'b', flags: { trust: 1 } }); }); it('ignores saves from another story version', () => { saveGame({ storyVersion: '0', nodeId: 'b', flags: {} }); expect(loadSave(story)).toBeNull(); }); it('clears saves', () => { saveGame({ storyVersion: '1', nodeId: 'b', flags: {} }); clearSave(); expect(loadSave(story)).toBeNull(); }); });
