@@ -1,0 +1,18 @@
+changeBg:radio_room.svg -next;
+changeFigure:xia_neutral.svg -left;
+旁白:广播室的金属柜门半敞着。夏遥顺着线路图摸到通风管接口，指尖沾上薄薄的锈粉。;
+夏遥:这条线路连着通风管。回响来自共振，不是鬼魂。;
+changeFigureDiff:xia_determined.svg;
+夏遥:检修页写着火灾当晚安全门故障，却从未进结案报告。;
+changeFigure:gu_neutral.svg -center;
+顾舟:这就能解释录音里的求助声为什么突然中断。;
+旁白:他把父亲留下的带子放上旧机器。三声回响与管口传来的节奏重合，几乎没有误差。;
+顾舟:所以那晚有人听见了，也有人选择不写进去。;
+changeFigure:lin_neutral.svg -right;
+林激:我找到姐姐证词的副本。她一直想让人知道安全门被堵住了。;
+旁白:林激把复印件轻轻放下，像放下一件藏了很久的东西。;
+changeFigureDiff:lin_worried.svg;
+林激:如果你现在就冲进去找母带……我也拦不住你。但我希望你别一个人去。;
+夏遥:我们按流程保全原带与检修页。证据在手上，才谈得上选择。;
+旁白:证据已经出现。是否立刻申请核验，还是冒险闯入封锁区寻找更完整的原带？;
+choose:回档案室保全材料:evidence_review.txt|冒雨闯入封锁区寻找原始带:sealed_hall.txt;

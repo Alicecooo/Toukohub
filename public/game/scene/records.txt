@@ -1,0 +1,16 @@
+changeBg:school_archive.svg -next;
+旁白:档案室的灯管发出细微的嗡鸣。公开目录列出一段广播录音和一份学生证词，两者却都没有进入结案报告。;
+changeFigure:gu_neutral.svg -left;
+顾舟:这不是简单的归档遗漏。;
+changeFigure:lin_neutral.svg -center;
+林激:借阅单对应的就是那份证词。我想知道姐姐写了什么，但不想让她再受伤。;
+changeFigure:xia_neutral.svg -right;
+夏遥:我来核对档案编号，未经同意不公开证词。;
+旁白:夏遥翻开登记簿，手指停在一处被涂改过的页码。墨水颜色新旧不一。;
+夏遥:编号被人移出过目录。不是丢失，是“假装不存在”。;
+changeFigureDiff:lin_worried.svg;
+林激:……那就更不能直接喊出来。喊出去的瞬间，她又会变成标题。;
+顾舟:我们可以先听录音，确认回响和证词是否同一晚；也可以先把手续链走完，把材料锁进可核验的流程。;
+旁白:雨打在高窗外。三人站在目录前，像站在一条被擦掉一半的路中央。;
+旁白:顾舟可以先听录音查明回响，也可以先核对封存手续。;
+choose:与林激核对证词和录音:tape_room.txt|与夏遥核对档案手续:evidence_review.txt;
