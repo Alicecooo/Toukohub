@@ -1,1 +1,26 @@
-{"version":"1.0.0","startNode":"start","characters":{"narrator":"旁白","aiko":"爱子"},"nodes":[{"id":"start","speaker":"narrator","text":"雪落在放学后的站台。你收到一封没有署名的信。","choices":[{"text":"打开信封","next":"letter"},{"text":"先去问爱子","next":"friend"}]},{"id":"letter","speaker":"aiko","text":"如果你看到了这封信，请在钟声响起前到旧礼堂。","choices":[{"text":"前往旧礼堂","next":"ending-brave"},{"text":"把信交给老师","next":"ending-safe"}]},{"id":"friend","speaker":"aiko","text":"爱子说，她也在等一个答案。","choices":[{"text":"和她一起去","next":"ending-together"},{"text":"独自前往","next":"ending-brave"}]},{"id":"ending-brave","ending":{"title":"勇气的回声","text":"你推开了旧礼堂的门，故事从此有了新的方向。"}},{"id":"ending-safe","ending":{"title":"温柔的守护","text":"老师保管了信，也答应替你寻找寄信人。"}},{"id":"ending-together","ending":{"title":"并肩的冬日","text":"你们在钟声中相视而笑，答案不再重要。"}}]}
+{
+  "version": "1.1.0",
+  "startNode": "prologue",
+  "characters": {
+    "gu": "顾舟",
+    "lin": "林激",
+    "xia": "夏遥",
+    "narrator": "旁白"
+  },
+  "nodes": [
+    {"id":"prologue","background":"rainy_gate","speaker":"narrator","text":"转学生顾舟来到临海的青岚学园。连续几夜，封闭旧馆方向传来三声回响；父亲留下的旧录音里，也有同样的声音。图书委员林激似乎认得那段杂音，学生会的夏遥则带来一张被撕去落款的旧报纸。","choices":[{"text":"去图书馆找林激","next":"library","effects":{"trust":{"lin":1}}},{"text":"跟夏遥去学生会查报纸","next":"council","effects":{"trust":{"xia":1}}}]},
+    {"id":"library","background":"library_rain","speaker":"lin","text":"林激把顾舟带到旧报刊柜。他内敛寡言，却准确说出回响出现的日期，随即改口称只是偶然记住。","choices":[{"text":"温和地问他为何在意这件事","next":"lin_line","effects":{"trust":{"lin":1}}},{"text":"先抄下报纸上的日期，再去找夏遥","next":"council"}]},
+    {"id":"council","background":"student_council","speaker":"xia","text":"夏遥直率地承认学生会收到过旧馆封闭通知，却没有事故附件。她不喜欢绕弯，决定和顾舟一起追查档案来源。","choices":[{"text":"请夏遥陪自己去旧馆外围","next":"xia_line","effects":{"trust":{"xia":1}}},{"text":"把报纸日期带去问林激","next":"lin_line"}]},
+    {"id":"lin_line","background":"archive_library","speaker":"lin","text":"林激终于坦白：七年前火灾当晚，他的姐姐曾在图书馆值班，之后因提交证词而离开学校。他一直保留姐姐夹在旧书里的借阅单，却害怕再把她卷进传闻。","choices":[{"text":"尊重他的顾虑，只核对公开记录","next":"public_records"},{"text":"请他一起听完顾舟的旧录音","next":"tape_room"}]},
+    {"id":"xia_line","background":"old_hall_exterior","speaker":"xia","text":"夏遥找到一张旧馆疏散图。她坦率指出图上安全门被标成了储物间，封存报告显然漏掉了重要信息。","choices":[{"text":"按流程申请查看事故附件","next":"public_records"},{"text":"趁雨声掩护，去确认旧广播线路","next":"broadcast_room"}]},
+    {"id":"public_records","background":"school_archive","speaker":"narrator","text":"公开目录显示，火灾当晚曾有一段广播录音和一份学生证词，但两者都未收入结案报告。档案室的访问记录将顾舟引向旧广播室。","choices":[{"text":"和林激一起寻找借阅单对应的证词","next":"tape_room"},{"text":"与夏遥核对封存档案的手续","next":"evidence_review"}]},
+    {"id":"tape_room","background":"radio_room","speaker":"lin","text":"录音前半段只有雨声与三次回响。林激认出姐姐的声音：她报告安全门被杂物堵住，随后广播突然中断。他终于愿意让证词接受核验。","choices":[{"text":"保存原带并请夏遥核对档案链","next":"evidence_review"},{"text":"只把录音交给林激，暂不公开","next":"echo"}]},
+    {"id":"broadcast_room","background":"radio_room","speaker":"xia","text":"线路检修记录显示，回响来自通风管与旧广播线共振，并非闹鬼。夏遥找到被漏记的检修页：火灾当晚，安全门故障曾被报告。","choices":[{"text":"按程序保全检修页和录音","next":"evidence_review"},{"text":"趁夜进入旧馆找出完整原带","next":"sealed_hall"}]},
+    {"id":"evidence_review","background":"archive_room","speaker":"xia","text":"夏遥核对了档案编号，确认材料曾被移出目录。林激也找到姐姐证词的副本。两份记录相互印证，但公开前仍要决定如何保护证人和原始材料。","choices":[{"text":"三人共同提交证据，要求重启调查","next":"truth"},{"text":"先在校内说明并修复被隐瞒的关系","next":"spring"},{"text":"暂时封存录音，只留下彼此的约定","next":"echo"},{"text":"夜里独自闯入旧馆寻找原始带","next":"sealed_hall"}]},
+    {"id":"sealed_hall","background":"sealed_corridor","speaker":"narrator","text":"旧馆深处，三声回响沿通风管传来。顾舟找到标有火灾日期的母带，却听见门锁在身后合拢。","choices":[{"text":"呼叫林激和夏遥，带着证据离开","next":"evidence_review"},{"text":"独自继续深入封锁区","next":"nightmare"}]},
+    {"id":"truth","background":"school_morning","speaker":"gu","text":"顾舟、林激与夏遥提交了录音、证词和检修页。调查重新启动，林激不再独自背负姐姐的沉默，夏遥则推动学校公开档案。雨停后，旧广播里终于传出完整的求助声。","ending":{"id":"truth","title":"雨停之后的真相"}},
+    {"id":"echo","background":"rainy_window","speaker":"lin","text":"他们暂不公开录音，但将证据备份并约定不再让任何人的声音被抹去。林激第一次主动邀请顾舟和夏遥来图书馆；窗外的回响仍在，却不再像一个人的秘密。","ending":{"id":"echo","title":"回声中的约定"}},
+    {"id":"spring","background":"school_garden","speaker":"xia","text":"三人在校内说明档案缺失，促成证词复核与公开道歉。林激终于把姐姐的借阅单归还档案柜，夏遥也学会在直言之外留出倾听的时间。春天来临，他们一起走进重新开放的旧馆。","ending":{"id":"spring","title":"不再沉默的春天"}},
+    {"id":"nightmare","background":"sealed_corridor","speaker":"gu","text":"顾舟独自越过警戒线，找到另一盘没有标签的磁带。门在回响中锁上，录音机自动转动；里面传来的声音，竟像是从尚未发生的雨夜寄来。","ending":{"id":"nightmare","title":"雨夜回声"}}
+  ]
+}
