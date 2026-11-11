@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#24324a"/>
+      <stop offset="100%" stop-color="#4a5d78"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2d333c"/>
+      <stop offset="100%" stop-color="#171a1e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#sky)"/>
+  <rect y="620" width="1920" height="460" fill="url(#ground)"/>
+  <rect x="520" y="260" width="880" height="420" fill="#2b3a52" stroke="#a8bfd6" stroke-width="5"/>
+       <rect x="560" y="300" width="160" height="120" fill="#7ea0bf" fill-opacity="0.35"/>
+       <rect x="760" y="300" width="160" height="120" fill="#7ea0bf" fill-opacity="0.35"/>
+       <rect x="960" y="300" width="160" height="120" fill="#7ea0bf" fill-opacity="0.35"/>
+       <rect x="1160" y="300" width="160" height="120" fill="#7ea0bf" fill-opacity="0.35"/>
+  <rect x="60" y="40" width="420" height="54" rx="8" fill="#6d89a8" fill-opacity="0.55"/>
+  <text x="80" y="76" font-family="serif" font-size="28" fill="#f4f7fb">图书馆</text>
+</svg>

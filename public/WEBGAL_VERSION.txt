@@ -1,0 +1,1 @@
+WebGAL 4.6.6 from /tmp/webgal-4.6.6 (official release package)

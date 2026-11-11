@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a3344"/>
+      <stop offset="100%" stop-color="#45546a"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#23282f"/>
+      <stop offset="100%" stop-color="#121417"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#sky)"/>
+  <rect y="620" width="1920" height="460" fill="url(#ground)"/>
+  <rect x="420" y="240" width="180" height="460" fill="#354457"/>
+       <rect x="640" y="240" width="180" height="460" fill="#3b4b60"/>
+       <rect x="860" y="240" width="180" height="460" fill="#354457"/>
+       <rect x="1080" y="240" width="180" height="460" fill="#3b4b60"/>
+       <rect x="1300" y="240" width="180" height="460" fill="#354457"/>
+  <rect x="60" y="40" width="420" height="54" rx="8" fill="#7f97b0" fill-opacity="0.55"/>
+  <text x="80" y="76" font-family="serif" font-size="28" fill="#f4f7fb">档案库</text>
+</svg>

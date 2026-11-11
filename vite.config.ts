@@ -1,3 +1,15 @@
 import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-export default defineConfig({ base: '/Toukohub/', publicDir: 'content', plugins: [react()] });
+
+export default defineConfig({
+  base: '/Toukohub/',
+  // WebGAL is a prebuilt static engine copied into dist by scripts/build.mjs.
+  // vite preview serves that dist with the GitHub Pages base path.
+  build: {
+    outDir: 'dist',
+    emptyOutDir: false,
+  },
+  preview: {
+    port: 4173,
+    strictPort: true,
+  },
+});

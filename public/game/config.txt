@@ -1,0 +1,8 @@
+Game_name:雨夜回声;
+Game_key:rain-echo-webgal-466;
+Title_img:title_rain.svg;
+Title_bgm:s_Title.mp3;
+Game_Logo:title_rain.svg;
+Enable_Appreciation:false;
+Enable_Continue:true;
+Enable_flowchart:false;

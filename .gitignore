@@ -16,3 +16,7 @@ test-results/
 /vite.config.d.ts
 /vitest.config.js
 /vitest.config.d.ts
+
+# WebGAL local caches / editor leftovers
+public/game/flowchart.json
+.webgal/

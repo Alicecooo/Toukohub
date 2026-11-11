@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#152033"/>
+      <stop offset="100%" stop-color="#3a4d66"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1f26"/>
+      <stop offset="100%" stop-color="#0d1014"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#sky)"/>
+  <rect y="620" width="1920" height="460" fill="url(#ground)"/>
+  <text x="960" y="480" text-anchor="middle" font-family="serif" font-size="96" fill="#e8f1fa">雨夜回声</text>
+       <text x="960" y="560" text-anchor="middle" font-family="sans-serif" font-size="28" fill="#b7cce0">Rain Echo</text>
+       <line x1="300" y1="100" x2="240" y2="980" stroke="#9eb6cc" stroke-opacity="0.35" stroke-width="2"/>
+       <line x1="700" y1="40" x2="640" y2="1040" stroke="#9eb6cc" stroke-opacity="0.28" stroke-width="2"/>
+       <line x1="1200" y1="60" x2="1120" y2="1020" stroke="#9eb6cc" stroke-opacity="0.3" stroke-width="2"/>
+       <line x1="1600" y1="20" x2="1500" y2="1060" stroke="#9eb6cc" stroke-opacity="0.25" stroke-width="2"/>
+  <rect x="60" y="40" width="420" height="54" rx="8" fill="#6d8fb0" fill-opacity="0.55"/>
+  <text x="80" y="76" font-family="serif" font-size="28" fill="#f4f7fb">雨夜回声</text>
+</svg>
