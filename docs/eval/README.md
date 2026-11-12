@@ -16,4 +16,6 @@
 
 ## Touko 本地存储
 
-完整对话数据库和运行时快照包含 Bot 聊天记录，不宜放进这个公开仓库。请使用另外提供的 `touko-runtime-snapshot` 压缩包，按包内说明复制恢复。
+`touko-runtime-core-2026-11-12.tar.gz` 是这次评测的 Touko 本地存储精简快照，含对话数据库、任务和记忆，不含 `checkpoints/` 和 `native/` 缓存。克隆仓库后解压，按包内 README 把 `openmausbot/` 复制到目标机器的 Touko 数据目录（评测环境是 `OMB_DATA_DIR`，即 `/workspace/dev-env/.runtime/openmausbot`）即可恢复排查。
+
+注意：这个压缩包里有完整 Bot 对话记录，仓库是公开的。
