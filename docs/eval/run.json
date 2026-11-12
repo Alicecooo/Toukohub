@@ -1,0 +1,34 @@
+{
+  "startedAt": "2026-11-11T18:21:21.251047+08:00",
+  "timezone": "Asia/Shanghai",
+  "model": {
+    "instanceId": "cursor",
+    "model": "auto",
+    "previous": "hiyo/gpt-6-luna",
+    "note": "Switched off hiyo relay due to stable 403; using Cursor Premium quota."
+  },
+  "bots": {
+    "Director": {
+      "id": "08d4fd9b-2821-49c6-8cb9-472cd7e83462",
+      "threadId": "b8e38043-6a3a-4375-93e8-bebb4fefc18e",
+      "engine": "cursor",
+      "model": "auto"
+    },
+    "Writer": {
+      "id": "0da05b5a-502e-44ff-b401-68e88c00d1fa",
+      "threadId": "ab43c8cc-87e5-4f0e-8d9b-949ab3ea18a0",
+      "engine": "cursor",
+      "model": "auto"
+    },
+    "Developer": {
+      "id": "29405ba3-7ebe-45db-a08f-768220553fd6",
+      "threadId": "ea63285d-22dc-4703-9f16-55c4a3209128",
+      "engine": "cursor",
+      "model": "auto"
+    }
+  },
+  "workspace": "/workspace/touko-galgame-stress",
+  "publishRepo": "https://github.com/Alicecooo/Toukohub.git",
+  "level": "Smoke then continue toward a playable MVP and Pages publish",
+  "note": "Do not reveal later stress-test phases to the bots in the first round."
+}
