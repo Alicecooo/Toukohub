@@ -18,8 +18,8 @@ mustExist('assets/index-Dcp3ZA1M.js');
 mustExist('webgal-engine.json');
 mustExist('game/config.txt');
 mustExist('game/scene/start.txt');
-mustExist('game/background/title_rain.svg');
-mustExist('game/figure/gu_neutral.svg');
+mustExist('game/background/title_rain.jpg');
+mustExist('game/figure/gu_neutral.png');
 
 rmSync(dist, { recursive: true, force: true });
 mkdirSync(dist, { recursive: true });

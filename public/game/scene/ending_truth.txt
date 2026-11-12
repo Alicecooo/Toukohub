@@ -1,11 +1,11 @@
-changeBg:school_morning.svg -next;
-changeFigure:gu_neutral.svg -left;
+changeBg:school_morning.jpg -next;
+changeFigure:gu_neutral.png -left;
 旁白:雨停之后的清晨，校务楼前的积水映出薄云。三人并排站着，手里的材料袋还带着档案室的冷气。;
 顾舟:我们提交录音、检修页和经核验的证词，请求重启调查。;
 旁白:工作人员逐页核对编号。夏遥盯着每一处签收栏，林激则把目光放在证词副本被盖章的瞬间。;
-changeFigure:lin_smile.svg -center;
+changeFigure:lin_smile.png -center;
 林激:姐姐不用再独自背负那晚的沉默了。谢谢你们愿意先听她说完。;
-changeFigure:xia_smile.svg -right;
+changeFigure:xia_smile.png -right;
 夏遥:学校会公开调查进度。旧馆安全问题也会重新检查。;
 顾舟:这次不会再有“假装不存在”的目录了。;
 夏遥:有的话，我们还会再来。;

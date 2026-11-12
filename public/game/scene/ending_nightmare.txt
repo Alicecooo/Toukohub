@@ -1,5 +1,5 @@
-changeBg:sealed_corridor.svg -next;
-changeFigure:gu_neutral.svg -center;
+changeBg:sealed_corridor.jpg -next;
+changeFigure:gu_neutral.png -center;
 旁白:警戒线断在身后。顾舟举着手电，光柱在潮湿墙面上发抖。;
 顾舟:我只差最后一扇门。;
 旁白:铁门在回响中锁上。脚步声被走廊吞掉，连雨声都变得遥远。;

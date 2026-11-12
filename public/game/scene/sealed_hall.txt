@@ -1,6 +1,6 @@
-changeBg:sealed_corridor.svg -next;
+changeBg:sealed_corridor.jpg -next;
 旁白:雨水从旧馆墙缝渗入。三声回响沿通风管传来，像有人在深处一遍遍敲门。;
-changeFigure:gu_neutral.svg -center;
+changeFigure:gu_neutral.png -center;
 顾舟:母带在里面。我已经走到这里，不能空手回去。;
 旁白:封条被雨水泡软。顾舟侧身穿过警戒线，鞋底踩上积水，发出很轻的一声。;
 顾舟:父亲听过的那段，也许只是拷贝。真正的原声，该躺在更里面。;
